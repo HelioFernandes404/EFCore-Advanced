@@ -1,16 +1,11 @@
-﻿using System;
+﻿namespace DominandoEFCore;
+using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace DominandoEFCore
+public class Carregamentos
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-
         static void CarregamentoLento()
         {
             using var db = new ApplicationContext();
@@ -140,5 +135,4 @@ namespace DominandoEFCore
                 db.ChangeTracker.Clear();
             }
         }
-    }
 }
