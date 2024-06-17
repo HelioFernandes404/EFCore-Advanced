@@ -72,3 +72,8 @@ c:\Users\helio\cursos\projetos\EFcore\bin\Debug\net7.0\Microsoft.EntityFramework
 c:\Users\helio\cursos\projetos\EFcore\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 c:\Users\helio\cursos\projetos\EFcore\bin\Debug\net7.0\Mono.TextTemplating.dll
 c:\Users\helio\cursos\projetos\EFcore\bin\Debug\net7.0\System.CodeDom.dll
+c:\Users\helio\cursos\projetos\EFcore\bin\Debug\net7.0\Castle.Core.dll
+c:\Users\helio\cursos\projetos\EFcore\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Proxies.dll
+c:\Users\helio\cursos\projetos\EFcore\bin\Debug\net7.0\System.Diagnostics.EventLog.dll
+c:\Users\helio\cursos\projetos\EFcore\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+c:\Users\helio\cursos\projetos\EFcore\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll

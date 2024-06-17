@@ -14,6 +14,7 @@ public class ApplicationContext : DbContext // Class do EF core que gerencia o b
         optionsBuilder
             .UseSqlServer(strConnection)
             .LogTo(Console.WriteLine, LogLevel.Information) // Loga as informações no console
+            //.UseLazyLoadingProxies() // Habilita o carregamento preguiçoso
             .EnableSensitiveDataLogging(); // Habilita o log de informações sensíveis
     }
 }
