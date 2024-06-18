@@ -7,7 +7,10 @@ public class Departamento
     public int Id { get; set; }
     public string Descricao { get; set; }
     public bool Ativo { get; set; }
-
+    public bool Excluido { get; set; }
+    public List<Funcionario> Funcionarios { get; set; } //1N (proriedade de navegação)
+    
+    /*
     public Departamento()
     {
 
@@ -28,8 +31,7 @@ public class Departamento
         }
         set => _funcionarios = value;
     }
-
-    /*
+    
     private ILazyLoader _lazyLoader { get; set; }
     private Departamento(ILazyLoader lazyLoader)
     {

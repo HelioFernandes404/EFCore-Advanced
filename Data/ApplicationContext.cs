@@ -10,11 +10,16 @@ public class ApplicationContext : DbContext // Class do EF core que gerencia o b
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        const string strConnection = "Server=DESKTOP-KH946K7\\SQLEXPRESS;Database=DEFCore;Trusted_Connection=True;TrustServerCertificate=True;";
+        const string strConnection = "Server=DESKTOP-KH946K7\\SQLEXPRESS;Database=DevIO-02;Trusted_Connection=True;TrustServerCertificate=True;";
         optionsBuilder
-            .UseSqlServer(strConnection)
+            .UseSqlServer(strConnection, p => p.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)) // Define o comportamento de divisão de consulta
             .LogTo(Console.WriteLine, LogLevel.Information) // Loga as informações no console
             //.UseLazyLoadingProxies() // Habilita o carregamento preguiçoso
             .EnableSensitiveDataLogging(); // Habilita o log de informações sensíveis
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        //modelBuilder.Entity<Departamento>().HasQueryFilter(p => !p.Excluido); // Filtro global
     }
 }

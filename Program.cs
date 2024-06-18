@@ -9,9 +9,8 @@ namespace DominandoEFCore
     {
         static void Main(string[] args)
         {
-            
+           
         }
 
-        
     }
 }
