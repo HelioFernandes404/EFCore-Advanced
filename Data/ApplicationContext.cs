@@ -12,7 +12,8 @@ public class ApplicationContext : DbContext // Class do EF core que gerencia o b
     {
         const string strConnection = "Server=DESKTOP-KH946K7\\SQLEXPRESS;Database=DevIO-02;Trusted_Connection=True;TrustServerCertificate=True;";
         optionsBuilder
-            .UseSqlServer(strConnection, p => p.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)) // Define o comportamento de divisão de consulta
+            //.UseSqlServer(strConnection, p => p.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)) // Define o comportamento de divisão de consulta
+            .UseSqlServer(strConnection)
             .LogTo(Console.WriteLine, LogLevel.Information) // Loga as informações no console
             //.UseLazyLoadingProxies() // Habilita o carregamento preguiçoso
             .EnableSensitiveDataLogging(); // Habilita o log de informações sensíveis
