@@ -1,7 +1,40 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\helio\\cursos\\projetos\\EFcore\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|c:\\users\\helio\\cursos\\projetos de curso\\lab-dominandoefcore\\efcore\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|solutionrelative:data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|c:\\users\\helio\\cursos\\projetos de curso\\lab-dominandoefcore\\efcore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|c:\\users\\helio\\cursos\\projetos de curso\\lab-dominandoefcore\\efcore\\domain\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|solutionrelative:domain\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|c:\\users\\helio\\cursos\\projetos de curso\\lab-dominandoefcore\\efcore\\log.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|solutionrelative:log.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|c:\\users\\helio\\cursos\\projetos de curso\\lab-dominandoefcore\\efcore\\domain\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|solutionrelative:domain\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|c:\\users\\helio\\cursos\\projetos de curso\\lab-dominandoefcore\\efcore\\domain\\modulos\\infra\\infra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|solutionrelative:domain\\modulos\\infra\\infra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|c:\\users\\helio\\cursos\\projetos de curso\\lab-dominandoefcore\\efcore\\domain\\modulos\\consultas\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|solutionrelative:domain\\modulos\\consultas\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|c:\\users\\helio\\cursos\\projetos de curso\\lab-dominandoefcore\\efcore\\domain\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07559561-77A0-4F01-87BF-21C26106DB59}|DominandoEFCore.csproj|solutionrelative:domain\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -17,15 +50,111 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Estado.cs",
+              "DocumentMoniker": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Domain\\Estado.cs",
+              "RelativeDocumentMoniker": "Domain\\Estado.cs",
+              "ToolTip": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Domain\\Estado.cs",
+              "RelativeToolTip": "Domain\\Estado.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T03:19:41.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "log.txt",
+              "DocumentMoniker": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\log.txt",
+              "RelativeDocumentMoniker": "log.txt",
+              "ToolTip": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\log.txt",
+              "RelativeToolTip": "log.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-26T02:55:41.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "infra.cs",
+              "DocumentMoniker": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Domain\\Modulos\\infra\\infra.cs",
+              "RelativeDocumentMoniker": "Domain\\Modulos\\infra\\infra.cs",
+              "ToolTip": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Domain\\Modulos\\infra\\infra.cs",
+              "RelativeToolTip": "Domain\\Modulos\\infra\\infra.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T02:55:13.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Domain\\Modulos\\Consultas\\data\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "Domain\\Modulos\\Consultas\\data\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Domain\\Modulos\\Consultas\\data\\ApplicationContext.cs",
+              "RelativeToolTip": "Domain\\Modulos\\Consultas\\data\\ApplicationContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T02:36:48.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Funcionario.cs",
+              "DocumentMoniker": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Domain\\Funcionario.cs",
+              "RelativeDocumentMoniker": "Domain\\Funcionario.cs",
+              "ToolTip": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Domain\\Funcionario.cs",
+              "RelativeToolTip": "Domain\\Funcionario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T02:15:27.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Departamento.cs",
+              "DocumentMoniker": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Domain\\Departamento.cs",
+              "RelativeDocumentMoniker": "Domain\\Departamento.cs",
+              "ToolTip": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Domain\\Departamento.cs",
+              "RelativeToolTip": "Domain\\Departamento.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T02:15:24.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Data\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Data\\ApplicationContext.cs",
+              "RelativeToolTip": "Data\\ApplicationContext.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAiwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T02:14:28.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAiwBAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T02:12:51.289Z",
+              "EditorCaption": ""
             }
           ]
         }

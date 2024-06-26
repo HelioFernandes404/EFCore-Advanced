@@ -1,4 +1,5 @@
 ﻿using System;
+using EFcore.Domain;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
@@ -10,8 +11,9 @@ namespace DominandoEFCore
     {
         static void Main(string[] args)
         {
+
+
         }
 
-        
     }
 }
