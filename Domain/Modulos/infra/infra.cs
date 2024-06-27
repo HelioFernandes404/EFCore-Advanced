@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DominandoEFCore.Domain.Modulos.Suporte
 {
-    internal class infra
+    public class Infra
     {
 
         static void ExecutarEstrategiaResiliencia()

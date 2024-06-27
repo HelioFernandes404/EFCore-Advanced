@@ -3185,11 +3185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\DominandoEFCore.csproj",
+      "projectUniqueName": "C:\\Users\\helio\\cursos\\projetos-devIO\\1.DominandoEFCore\\EFcore\\DominandoEFCore.csproj",
       "projectName": "DominandoEFCore",
-      "projectPath": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\DominandoEFCore.csproj",
+      "projectPath": "C:\\Users\\helio\\cursos\\projetos-devIO\\1.DominandoEFCore\\EFcore\\DominandoEFCore.csproj",
       "packagesPath": "C:\\Users\\helio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\helio\\cursos\\projetos de curso\\lab-DominandoEFCore\\EFcore\\obj\\",
+      "outputPath": "C:\\Users\\helio\\cursos\\projetos-devIO\\1.DominandoEFCore\\EFcore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

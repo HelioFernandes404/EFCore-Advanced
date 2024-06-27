@@ -8,6 +8,7 @@ public class Funcionario
     public string RG { get; set; }
     public bool Excluido { get; set; }
 
-    public int DepartamentoId { get; set; } // FK Departamento
+    // FK Departamento
+    //public int DepartamentoId { get; set; }
     public virtual Departamento Departamento { get; set; } // N1 Funcionario -> 1 Departamento
 }
