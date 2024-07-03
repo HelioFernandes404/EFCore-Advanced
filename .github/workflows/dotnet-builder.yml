@@ -24,7 +24,7 @@ jobs:
       - name: pwd
         run: pwd
       - name: Restore dependencies
-        run: dotnet restore DominandoEFCore.csproj
+        run: dotnet restore ./DominandoEFCore.csproj
         
 
 
