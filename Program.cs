@@ -13,9 +13,35 @@ namespace DominandoEFCore
     {
         static void Main(string[] args)
         {
-            RelaciomentoUmParaMuitos();
+            ExemploTPH();
         }
 
+        static void ExemploTPH()
+        {
+            using var db = new ApplicationContext();
+            db.Database.EnsureDeleted();
+            db.Database.EnsureCreated();
+
+            var pessoa = new Pessoa { Nome = "Fulano de tal" };
+            var instrutor = new Instrutor { Nome = "Beltrano", Tecnologia = ".NET", Desde = DateTime.Now };
+            var aluno = new Aluno { Nome = "Sicrano", Idade = 25, DataContrato = DateTime.Now.AddDays(-1) };
+
+            db.AddRange(pessoa, instrutor, aluno);
+            db.SaveChanges();
+
+            var pessoas = db.Set<Pessoa>().AsNoTracking().ToList();
+            var instrutores = db.Set<Instrutor>().AsNoTracking().ToList();
+            var alunos = db.Set<Aluno>().AsNoTracking().ToList();
+
+            Console.WriteLine("Pessoas");
+            pessoas.ForEach(p => Console.WriteLine($"Id: {p.Id}, Nome: {p.Nome}"));
+
+            Console.WriteLine("Instrutores");
+            instrutores.ForEach(i => Console.WriteLine($"Id: {i.Id}, Nome: {i.Nome}, Tecnologia: {i.Tecnologia}"));
+
+            Console.WriteLine("Alunos");
+            alunos.ForEach(a => Console.WriteLine($"Id: {a.Id}, Nome: {a.Nome}, Idade: {a.Idade}"));
+        }
         static void RelaciomentoUmParaMuitos()
         {
             using var db = new ApplicationContext();
@@ -52,9 +78,6 @@ namespace DominandoEFCore
                 }
             }
         }
-
-
-
         static void RelaciomentoUmParaUm()
         {
             using var db = new ApplicationContext();

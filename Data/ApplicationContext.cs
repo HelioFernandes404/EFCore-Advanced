@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 
 namespace DominandoEFCore;
 
-public class ApplicationContext : DbContext // Class do EF core que gerencia o banco de dados
+public class ApplicationContext : DbContext
 {
     public DbSet<Departamento> Departamentos { get; set; }
     public DbSet<Funcionario> Funcionarios { get; set; }
@@ -16,13 +16,17 @@ public class ApplicationContext : DbContext // Class do EF core que gerencia o b
     public DbSet<Cliente> Clientes { get; set; }
     public DbSet<Conversor> Conversors { get; set; }
 
+    public DbSet<Pessoa> Pessoas { get; set; }
+    public DbSet<Instrutor> Instrutuors { get; set; }
+    public DbSet<Aluno> Alunos { get; set; }
+
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        const string strConnection = "Server=DESKTOP-KH946K7\\SQLEXPRESS;Database=DevIO-02;Trusted_Connection=True;TrustServerCertificate=True;";
+        const string strConnection = "Server=localhost;Database=efcore-curso;User Id=sa;Password=Adminxyz22#;MultipleActiveResultSets=true;Encrypt=false;TrustServerCertificate=true;";
         optionsBuilder
             .UseSqlServer(strConnection)
             .LogTo(Console.WriteLine, LogLevel.Information)
-            .EnableSensitiveDataLogging()
             ;
     }
 
