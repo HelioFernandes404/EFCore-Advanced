@@ -3,7 +3,7 @@ using System.Net;
 namespace EFcore.Domain
 {
 
-  public class Cliente 
+  public class Cliente
   {
     public int Id { get; set; }
     public string Nome { get; set; }
@@ -20,5 +20,5 @@ namespace EFcore.Domain
     public string Estado { get; set; }
   }
 
-  
+
 }

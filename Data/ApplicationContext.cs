@@ -20,6 +20,8 @@ public class ApplicationContext : DbContext
     public DbSet<Instrutor> Instrutuors { get; set; }
     public DbSet<Aluno> Alunos { get; set; }
 
+    public DbSet<Dictionary<string, object>> Configuracoes => Set<Dictionary<string, object>>("Configuracoes");
+
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -40,6 +42,21 @@ public class ApplicationContext : DbContext
 
         // 3. forma de aplicar para todas as configura de todas entidades
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationContext).Assembly);
+
+
+        modelBuilder.SharedTypeEntity<Dictionary<string, object>>("Configuracoes", b =>
+        {
+            b.Property<int>("Id"); // obrigatório para efcore
+
+            b.Property<string>("Chave")
+            .HasColumnName("VARCHAR(40)")
+            .IsRequired();
+
+            b.Property<string>("Valor")
+            .HasColumnName("VARCHAR(255)")
+            .IsRequired();
+
+        });
     }
 
 }

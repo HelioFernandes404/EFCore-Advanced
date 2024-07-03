@@ -19,11 +19,14 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
+      - name: Display current directory structure
+        run: ls -R ./
+      - name: pwd
+        run: pwd
       - name: Restore dependencies
         run: dotnet restore DominandoEFCore.csproj
         
-      - name: Display current directory structure
-        run: ls -R ./
+
 
       - name: Build
         run: dotnet build --no-restore

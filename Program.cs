@@ -13,8 +13,34 @@ namespace DominandoEFCore
     {
         static void Main(string[] args)
         {
-            ExemploTPH();
+            PacotesDePropriedades();
         }
+
+        static void PacotesDePropriedades()
+        {
+            using var db = new ApplicationContext();
+            db.Database.EnsureDeleted();
+            db.Database.EnsureCreated();
+
+            var configuracao = new Dictionary<string, object>
+            {
+                ["Chave"] = "SenhaBancoDeDados",
+                ["Valor"] = Guid.NewGuid().ToString()
+            };
+
+            db.Configuracoes.Add(configuracao);
+            db.SaveChanges();
+
+            var configuracoes = db.Configuracoes.AsNoTracking()
+            .Where(c => c["Chave"] == "SenhaBancoDeDados")
+            .ToArray();
+
+            foreach (var dic in configuracoes)
+            {
+                Console.WriteLine($"Chave: {dic["Chave"]}, Valor: {dic["Valor"]}");
+            }
+        }
+
 
         static void ExemploTPH()
         {
@@ -154,6 +180,5 @@ namespace DominandoEFCore
 
             var departamento = new Departamento { Descricao = "Departamento Teste" };
         }
-
     }
 }
