@@ -1,6 +1,4 @@
 ﻿using System.Reflection;
-using DominandoEFCore.Domain;
-using EFcore.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
@@ -10,20 +8,7 @@ namespace DominandoEFCore;
 
 public class ApplicationContext : DbContext
 {
-    public DbSet<Departamento> Departamentos { get; set; }
-    public DbSet<Funcionario> Funcionarios { get; set; }
-    public DbSet<Estado> Estados { get; set; }
-    public DbSet<Cliente> Clientes { get; set; }
-    public DbSet<Conversor> Conversors { get; set; }
-
-    public DbSet<Pessoa> Pessoas { get; set; }
-    public DbSet<Instrutor> Instrutuors { get; set; }
-    public DbSet<Aluno> Alunos { get; set; }
-
-    public DbSet<Dictionary<string, object>> Configuracoes => Set<Dictionary<string, object>>("Configuracoes");
-
-    public DbSet<Aeroporto> Aeroportos { get; set; }
-    public DbSet<Atributo> Atributos { get; set; }
+    public DbSet<Funcao> Funcoes { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -36,30 +21,6 @@ public class ApplicationContext : DbContext
 
     override protected void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // 1. forma de aplicar as configura de entidades 
-        modelBuilder.ApplyConfiguration(new ClienteConfiguration());
-
-        // 2. forma de aplicar para todas as configura de todas entidades 
-        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-
-        // 3. forma de aplicar para todas as configura de todas entidades
-        modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationContext).Assembly);
-
-
-        modelBuilder.SharedTypeEntity<Dictionary<string, object>>("Configuracoes", b =>
-        {
-            b.Property<int>("Id"); // obrigatório para efcore
-
-            b.Property<string>("Chave")
-            .HasColumnName("VARCHAR(40)")
-            .IsRequired();
-
-            b.Property<string>("Valor")
-            .HasColumnName("VARCHAR(255)")
-            .IsRequired();
-
-        });
     }
-
 }
 
