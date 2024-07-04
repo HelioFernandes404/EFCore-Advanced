@@ -13,7 +13,14 @@ namespace DominandoEFCore
     {
         static void Main(string[] args)
         {
-            PacotesDePropriedades();
+            ScriptGeralDoBancoDeDados();
+        }
+
+        static void ScriptGeralDoBancoDeDados()
+        {
+            using var db = new ApplicationContext();
+            var script = db.Database.GenerateCreateScript();
+            Console.WriteLine(script);
         }
 
         static void PacotesDePropriedades()
@@ -40,8 +47,6 @@ namespace DominandoEFCore
                 Console.WriteLine($"Chave: {dic["Chave"]}, Valor: {dic["Valor"]}");
             }
         }
-
-
         static void ExemploTPH()
         {
             using var db = new ApplicationContext();
