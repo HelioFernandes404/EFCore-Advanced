@@ -27,3 +27,18 @@ Gostaria de contribuir? Ótimo! Aqui estão algumas diretrizes que você deve se
 
 ## Licença
 Este projeto é distribuído sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+
+
+# Links de ajuda para
+
+### Instalar o SDK
+
+```sh
+sudo apt-get install -y dotnet-sdk-7.0
+```
+
+### Instale o tempo de execução
+
+```sh
+sudo apt-get install -y aspnetcore-runtime-7.0
+```
