@@ -17,12 +17,6 @@ namespace DominandoEFCore
         }
 
 
-        {
-            using var db = new ApplicationContext();
-        db.Database.EnsureDeleted();
-            db.Database.EnsureCreated();
 
-            var departamento = new Departamento { Descricao = "Departamento Teste" };
     }
-}
 }
