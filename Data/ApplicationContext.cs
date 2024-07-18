@@ -25,6 +25,8 @@ public class ApplicationContext : DbContext
     public DbSet<Aeroporto> Aeroportos { get; set; }
     public DbSet<Atributo> Atributos { get; set; }
 
+    public DbSet<Funcao> Funcao { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         const string strConnection = "Server=localhost;Database=efcore-curso;User Id=sa;Password=Adminxyz22#;MultipleActiveResultSets=true;Encrypt=false;TrustServerCertificate=true;";
@@ -58,6 +60,13 @@ public class ApplicationContext : DbContext
             .HasColumnName("VARCHAR(255)")
             .IsRequired();
 
+        });
+
+        modelBuilder.Entity<Funcao>(conf =>
+        {
+            conf.Property<string>("PropriedadeSombra")
+            .HasColumnType("VARCHAR(255)")
+            .HasDefaultValue("'test'");
         });
     }
 

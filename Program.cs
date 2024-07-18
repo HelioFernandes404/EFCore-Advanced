@@ -13,16 +13,91 @@ namespace DominandoEFCore
     {
         static void Main(string[] args)
         {
-            ScriptGeralDoBancoDeDados();
+            //ScriptGeralDoBancoDeDados();
+            //FuncaoDataLength();
+            //FuncaoProperty();
+            //FuncaoCollate();
         }
 
+        static void FuncaoCollate()
+        {
+            var db = new ApplicationContext();
+            db.Database.EnsureDeleted();
+            db.Database.EnsureCreated();
+
+            db.Funcao.Add(new Funcao
+            {
+                Descricao1 = "Teste de Fun o Collate",
+            });
+            db.SaveChanges();
+
+            var resultado = db.Funcao
+            .AsNoTracking()
+            .Select(p => new
+            {
+                // Fazer um consulta case sensitive
+                Resultado = EF.Functions.Collate(p.Descricao1, "Latin1_General_CI_AI"),
+            })
+            .FirstOrDefaultAsync();
+
+            Console.WriteLine($"Consulta1: {resultado?.Result?.ToString()}");
+        }
+
+        static void FuncaoProperty()
+        {
+            var db = new ApplicationContext();
+            db.Database.EnsureDeleted();
+            db.Database.EnsureCreated();
+
+            var resultado = db.Funcao
+            .AsNoTracking()
+            .FirstOrDefault(p => EF.Property<string>(p, "PropriedadeSombra") == "Teste");
+
+            var propriedadeSombra = db
+            .Entry(resultado)
+            .Property<string>("PropriedadeSombra")
+            .CurrentValue;
+
+            Console.WriteLine("Resultado: ");
+            Console.WriteLine(propriedadeSombra);
+        }
+
+        static void FuncaoDataLength()
+        {
+            var db = new ApplicationContext();
+            db.Database.EnsureDeleted();
+            db.Database.EnsureCreated();
+
+            db.Funcao.Add(new Funcao
+            {
+                Descricao1 = "Teste de data length",
+                Data1 = DateTime.Now
+            });
+            db.SaveChanges();
+
+            using (db)
+            {
+                var resultado = db.Funcao
+                .AsNoTracking()
+                .Select(p => new
+                {
+                    TotalBytesCampoData = EF.Functions.DataLength(p.Data1),
+                    TotalBytes1 = EF.Functions.DataLength(p.Descricao1),
+                    Total1 = p.Descricao1.Length
+                })
+                .FirstOrDefaultAsync();
+
+                Console.WriteLine("Resultado: ");
+
+                Console.WriteLine(resultado);
+            }
+        }
         static void ScriptGeralDoBancoDeDados()
         {
             using var db = new ApplicationContext();
             var script = db.Database.GenerateCreateScript();
             Console.WriteLine(script);
         }
-
         static void PacotesDePropriedades()
         {
             using var db = new ApplicationContext();

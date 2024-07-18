@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j17Sfvqz4VQ=",
+  "dgSpecHash": "a/O2R+JQnLTCs96S6BEf0iBp9XAxoUXpH6jjHz47hVB9giyTS4YmJBbc8FKAmXCC0H/sidAVBzOJzZoV/neNGQ==",
   "success": true,
-  "projectFilePath": "/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/DominandoEFCore.csproj",
+  "projectFilePath": "/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/DominandoEFCore.csproj",
   "expectedPackageFiles": [
     "/home/helio/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/home/helio/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
@@ -68,10 +68,7 @@
     "/home/helio/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/home/helio/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
     "/home/helio/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/home/helio/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512",
-    "/home/helio/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "/home/helio/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
-    "/home/helio/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.20/microsoft.netcore.app.host.linux-x64.7.0.20.nupkg.sha512"
+    "/home/helio/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

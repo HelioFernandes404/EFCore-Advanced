@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/DominandoEFCore.csproj": {}
+    "/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/DominandoEFCore.csproj": {}
   },
   "projects": {
-    "/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/DominandoEFCore.csproj": {
+    "/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/DominandoEFCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/DominandoEFCore.csproj",
+        "projectUniqueName": "/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/DominandoEFCore.csproj",
         "projectName": "DominandoEFCore",
-        "projectPath": "/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/DominandoEFCore.csproj",
+        "projectPath": "/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/DominandoEFCore.csproj",
         "packagesPath": "/home/helio/.nuget/packages/",
-        "outputPath": "/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/obj/",
+        "outputPath": "/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/helio/.nuget/NuGet/NuGet.Config"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -73,26 +68,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.20, 7.0.20]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[7.0.20, 7.0.20]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.20, 7.0.20]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/helio/.dotnet/sdk/8.0.303/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.119/RuntimeIdentifierGraph.json"
         }
       }
     }
